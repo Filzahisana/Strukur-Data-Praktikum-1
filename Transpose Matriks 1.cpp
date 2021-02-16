@@ -7,52 +7,33 @@
 #include <conio.h>
 #include <iomanip>
 using namespace std;
-int i, j, k,a[10][10], baris, kolom, m1[10]
-[10], m2[10]
-[10], hasil[10]
-[10];
 int main()
 {
-
-cout << "Operasi pertambahan Matrix\n";
-do
-{
-cout << "Jumlah Baris = "; cin>>baris;
-cout << "Jumlah Kolom = "; cin>>kolom;
-}
-
-while((baris>10)||(kolom>10));
-/* do
-while(kolom>10);*/
-cout<<"\nMatrix A" << endl;
-for(i=0;i<baris;i++)
-for(j=0;j<kolom;j++)
-{
-cout <<"data [" << i << "," << j << "] = ";
-cin>>a[i][j];
-}
-cout<<endl<<endl;
-cout << "Matriks" << endl;
-for(i=0; i< baris; i++){
-
-for(j=0; j<kolom; j++)
-cout << setw(4) << a[i][j];
-cout << " ";
-cout<<endl;
-}
-
-
-
-cout<<endl<<"Transpose Matriks: "<<endl<<endl;
-        for(int i=0;i<baris;i++)
-    {
-        for(j=0;j<kolom;j++)
-    {
-        cout<<a[j][i]<<" ";
+    const int kolom = 2, baris = 2;
+    int array[baris][kolom] = {{3,6},{-2,10}};
+    int arrayTranspose[kolom][baris];
+    
+        cout << "Matriks : "<<endl;
+    for(int i = 0; i<baris; i++){
+        for(int n = 0; n<kolom; n++){
+            cout << array[i][n]<<" ";
+            arrayTranspose[n][i] = array[i][n];
+        }
+        cout<<endl;
     }
-        cout<<endl<<endl;
+
+
+cout<<endl<<"Transpose Matriks : "<<endl<<endl;
+
+    for(int i = 0; i<kolom; i++){
+        for(int n = 0; n<baris; n++){
+            cout<<arrayTranspose[i][n]<<" ";
+        }
+        cout<<endl;
     }
+
+
+    cout << endl << "\n"<<endl<<endl;
 getch();
 return 0;
 }
-
