@@ -11,8 +11,8 @@ int main()
 {
 
     const int column = 2, rows = 2;
-    int arrayA[rows][column] = {{3,6},{2,-10}};
-    int arrayB[column][rows]= {{3,6},{2,-10}};
+    int arrayA[rows][column] = {{3,6},{-2,10}};
+    int arrayB[column][rows]= {{3,6},{-2,10}};
 
     cout << "Matriks A " << endl;
     for(int z = 0; z<rows; z++){
