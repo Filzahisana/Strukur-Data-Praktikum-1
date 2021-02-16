@@ -1,1 +1,1 @@
-# Strukyur-Data---Praktikum-1
+# Struktur-Data-Praktikum-1
